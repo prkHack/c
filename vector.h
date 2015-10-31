@@ -85,7 +85,14 @@ public:
 			return size;
 		}
 		
-		
+		void swap(T a, T b)
+		{
+			for(int i=0;i<size;i++)
+			{
+				if(this->v[i]==a)
+					v[i] = b;
+			}
+		}
 		
 		~vector()
 		{
