@@ -39,7 +39,7 @@ public:
 				this->v[i] = '\0';
 		}
 		
-		void insert(int x)
+		void insert(T x)
 		{
 			for(int i=0;i<size;i++)
 			{
@@ -49,6 +49,12 @@ public:
 					break;
 				}
 			}
+		}
+		
+		void insert(int pos, T data)
+		{
+			if(pos < size&&pos>=0)
+				this->v[pos] = data;
 		}
 		
 		void push_back(T x)
