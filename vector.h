@@ -15,6 +15,17 @@ public:
 				this->v[i] = '\0';
 		}
 		
+		vector(std::initializer_list<T> list)
+		{
+			v = new T[size=list.size()];
+			copy(list.begin(), list.end(), v);
+		}
+		
+		vector()
+		{
+			size = 0;
+		}
+		
 		T findSum(void)
 		{
 			T sum;
