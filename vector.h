@@ -80,6 +80,13 @@ public:
 			return c;
 		}
 		
+		int capacity(void)
+		{
+			return size;
+		}
+		
+		
+		
 		~vector()
 		{
 			delete[] v;
